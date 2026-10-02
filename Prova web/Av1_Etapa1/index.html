@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMarvel - Registro de Candidatos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="cabecalho">
+            <h1>Registro de Candidatos</h1>
+            <p>Partido Marvel (PMarvel)</p>
+        </header>
+
+        <section class="painel">
+            <div class="form-group">
+                <label for="txtNumeroPartido">Número do Partido:</label>
+                <input type="text" id="txtNumeroPartido" value="92" maxlength="2"
+                       inputmode="numeric" placeholder="Digite o número (ex.: 92)">
+                <span id="msgErroPartido" class="erro" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Nome do Partido:</label>
+                <span id="lblNomePartido" class="valor"><b>PMarvel</b></span>
+            </div>
+
+            <div class="form-group">
+                <label for="lstCandidatos">Candidato:</label>
+                <select id="lstCandidatos" size="6">
+                    <option value="">Carregando filiados...</option>
+                </select>
+            </div>
+
+            <div id="painelCandidato" class="card-candidato" hidden>
+                <h3>Dados do Candidato Selecionado</h3>
+                <p><strong>Nome:</strong> <span id="infoNome">-</span></p>
+                <div>
+                    <strong>Foto:</strong><br>
+                    <img id="infoFoto" src="" alt="Foto do candidato">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="lstCargos">Cargo a Concorrer:</label>
+                <select id="lstCargos">
+                    <option value="">Selecione um cargo</option>
+                    <option value="Presidente">Presidente</option>
+                    <option value="Governador(a)">Governador(a)</option>
+                    <option value="Senador(a)">Senador(a)</option>
+                    <option value="Deputado(a) Federal">Deputado(a) Federal</option>
+                    <option value="Deputado(a) Estadual">Deputado(a) Estadual</option>
+                </select>
+                <span class="regras-cargo">
+                    Limites: Presidente (1), Governador(a) (1), Senador(a) (2),
+                    Deputado(a) Federal (livre) e Deputado(a) Estadual (livre).
+                </span>
+            </div>
+
+            <div class="form-group">
+                <label for="txtNumeroCandidato">Número do Candidato:</label>
+                <input type="text" id="txtNumeroCandidato" maxlength="5"
+                       inputmode="numeric" placeholder="Informe o número do candidato">
+                <span class="rules">
+                    Regras: 92 - Presidente/Governador(a); 92n - Senador(a);
+                    92nn - Dep. Fed.; 92nnn - Dep. Est.
+                </span>
+                <span id="msgErroNumero" class="erro" aria-live="polite"></span>
+            </div>
+
+            <div class="actions">
+                <button type="button" class="btn-primary" id="btnRegistrar">
+                    Registrar Candidatura
+                </button>
+                <button type="button" class="btn-success" id="btnEnviar">
+                    Gravar e Enviar ao TSE
+                </button>
+            </div>
+            <p id="msgFeedbackAcao" aria-live="polite"></p>
+        </section>
+
+        <section class="painel">
+            <h2>Candidaturas Registradas</h2>
+            <p class="texto-ajuda">Estas candidaturas ficam em memória até o envio da chapa.</p>
+            <ul id="listaRegistrados" class="lista-registrados">
+                <li class="vazio">Nenhuma candidatura registrada.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "PMarvel": [
+    { "nome": "Homem de Ferro", "foto": "imagem/Ferro.jpg" },
+    { "nome": "Capitão América", "foto": "imagem/Capitao.jpg" },
+    { "nome": "Thor", "foto": "imagem/Thor.jpg" },
+    { "nome": "Homem-Aranha", "foto": "imagem/Aranha.jpg" },
+    { "nome": "Hulk", "foto": "imagem/Hulk.jpg" },
+    { "nome": "Viúva Negra", "foto": "imagem/Viuva.jpg" },
+    { "nome": "Gavião Arqueiro", "foto": "imagem/Arqueiro.jpg" },
+    { "nome": "Pantera Negra", "foto": "imagem/Pantera.jpg" },
+    { "nome": "Capitã Marvel", "foto": "imagem/Capita.jpg" }
+  ]
+}
