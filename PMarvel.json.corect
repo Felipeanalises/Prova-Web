@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "Homem de Ferro",
+    "numero": "92",
+    "foto": "imagem/Ferro.jpg",
+    "cargo": "Presidente"
+  },
+  {
+    "nome": "Capitão América",
+    "numero": "925",
+    "foto": "imagem/Capitao.jpg",
+    "cargo": "Senador(a)"
+  },
+  {
+    "nome": "Hulk",
+    "numero": "9258",
+    "foto": "imagem/Hulk.jpg",
+    "cargo": "Deputado(a) Federal"
+  },
+  {
+    "nome": "Pantera Negra",
+    "numero": "92485",
+    "foto": "imagem/Pantera.jpg",
+    "cargo": "Deputado(a) Estadual"
+  },
+  {
+    "nome": "Capitã Marvel",
+    "numero": "927",
+    "foto": "imagem/Capita.jpg",
+    "cargo": "Senador(a)"
+  },
+  {
+    "nome": "Homem-Aranha",
+    "numero": "9254",
+    "foto": "imagem/Aranha.jpg",
+    "cargo": "Deputado(a) Federal"
+  },
+  {
+    "nome": "Gavião Arqueiro",
+    "numero": "9289",
+    "foto": "imagem/Arqueiro.jpg",
+    "cargo": "Deputado(a) Federal"
+  }
+]
